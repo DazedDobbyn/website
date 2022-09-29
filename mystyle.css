@@ -1,0 +1,183 @@
+html, body {
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(221, 233, 211);
+    position:fixed;
+    top:0;                 /* Styles the flexbox navigation bar at the top of the page */
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    outline: 1px solid rgb(163, 135, 98);
+}
+
+.container {
+    font-family: 'Mukta', sans-serif;
+    padding-left: 75px;
+    padding-right: 75px;   /* Used to font-style and pad all content on the page, except the flexbox Nav bar. Divides each section  of the page, making it easier to code with. */
+    padding-bottom: 70px;
+    color: rgb(200, 200, 200);
+}
+
+.maintext {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;   /* Styles the primary content in each section of the page */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    outline: 2.5px solid rgb(163, 135, 98);
+}
+
+.header {
+    display: flex;
+    white-space: nowrap;
+    border-radius: 10px;   /* Styles the header for every section */
+    background-color: rgb(192, 107, 58);
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+    text-shadow: 0 0 5px #000000;
+    outline: 2.5px solid #ff6a6a;
+}
+
+#title {
+    font-size: 1.2cm;
+    margin-top: 125px;
+}
+
+.this {
+    display: flex;
+    border-radius: 7px;
+    width: 212.5px;
+    background-color: #555555;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.bigthis {
+    display: flex;
+    width: 192.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+}
+
+#lilthis {
+    justify-content: center;
+    margin-top: 11px;
+}
+
+.tag {
+    color: rgb(25, 86, 199); 
+}
+
+/* Both .tag and .att are used to style the wording when referring to HTML tags and attributes, respectively */
+
+.att {
+    color: rgb(106, 158, 255);
+}
+
+.links {
+    text-align: center;
+    margin: 30px;
+}
+
+.formatting {
+    font-size: x-large;
+    font-family: 'Barlow', sans-serif;
+}
+
+#flexNav {
+    width: 1000px;
+    height: 133px;
+    border: 2px solid rgb(163, 135, 98);
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#listNav {
+    display: block;
+    width: 300px;
+    height: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    border: 2px solid rgb(163, 135, 98);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.align {
+    text-align: center;
+}
+
+#flexNavtext {
+    margin-bottom: 75px;
+}
+
+table {
+    border: 2px solid black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+th {
+    border: 2px solid black;
+    background-color: #00000042;
+}
+
+td {
+    border: 2px solid black;
+    background-color: rgb(49, 76, 77);
+    padding: 10px;
+}
+
+#submit {
+    margin-bottom: 20px;
+}
+
+audio {
+    border: 15px double black;
+}
+
+video {
+    border: 10px solid black;
+    margin-left: 20px;
+}
+
+
+a:link { text-decoration: none; color: rgb(0, 132, 255);}
+a:visited { text-decoration: none; color: rgb(0, 132, 255); }
+a:focus { text-decoration: none; color: rgb(0, 132, 255); }
+
+/* The code above colours the links in the main content area. The code below styles the links in the Nav bar */
+
+.formatting:link { text-decoration: none; color: black;}
+.formatting:visited { text-decoration: none; color: black; }
+.formatting:hover { text-decoration: underline; text-decoration-thickness: 2px; color: rgb(39, 39, 39);}
+.formatting:focus { text-decoration: none; color: black; }
+

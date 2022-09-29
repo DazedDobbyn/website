@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- COMP.5204 Enterprise Web Development -->
+    <!-- Assessment 2 -->
+    <!-- Jackson Robb || 30067184 -->
+    <!-- HTML & CSS Example Page -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+    <link href="history.html">
+    
+    <title>A.Assessment 1</title>
+
+</head>
+<body>
+     
+    <nav>
+        <div class="flexbox"> <!-- This is the content in the flexbox navigation bar, at the top of the page -->
+            <a class="formatting" href="#formatting"><div class="links">Formatting</div></a>
+            <a class="formatting" href="#htmlroles"><div class="links">HTML Roles</div></a>
+            <a class="formatting" href="#linking"><div class="links">Links & Navigation</div></a>
+            <a class="formatting" href="#images"><div class="links">Images & Graphics</div></a>
+            <a class="formatting" href="#media"><div class="links">Media</div></a>
+            <a class="formatting" href="#together"><div class="links">Putting It All Together</div></a>
+            <a class="formatting" href="#forms"><div class="links">Forms</div></a>
+            <a class="formatting" href="#tables"><div class="links">Tables</div></a>
+            <a class="formatting" href="#history"><div class="links">The Web</div></a>
+        </div>
+    </nav>
+
+    <hr id="pagetop">
+
+    <div class="container"> <!-- All sections (except the Nav bar) are divided between <div class="container"> -->
+    
+        <div id="formatting"> <!-- Page title and first section heading -->
+
+            <h1 id="title">HTML & CSS Example Page</h1>
+            <hr><h1 class="header">Formatting Text</h1><hr>
+
+        </div>
+
+        <div class="maintext"> <!-- All primary content is divided between <div class="maintext"> -->
+
+            <div>
+
+                <p>
+                    Above are examples of a Headline <b class="tag">&lt;h1&gt;</b>. This text is an example of a paragraph <b class="tag">&lt;p&gt;</b>, and below is an Unordered List (<b class="tag">&lt;ul&gt;</b> & <b class="tag">&lt;li&gt;</b>, respectively) of some more tags, including:
+                </p>
+
+                <ul>
+                    <li><b>Bold</b> <b class="tag">&lt;b&gt;</b> and <i>Italic</i> <b class="tag">&lt;i&gt;</b> text </li>
+                    <li><q>Quotation Marks</q> <b class="tag">&lt;q&gt;</b> which displays the item in quotes</li>
+                    <li><sub>Subscript <b class="tag">&lt;sub&gt;</b></sub> and <sup>Superscript <b class="tag">&lt;sup&gt;</b></sup> which renders characters lower or higher than the baseline.</li>
+                    <li><code>The <b class="tag">&lt;code&gt;</b> tag which displays content using the browsers default monospace font.</code></li>
+                </ul>
+                
+                <p>
+                    <b class="tag">&lt;time&gt;</b> is used to convert dates and times written in xx:xx or yyyy-mm-dd formats to a format the machine can read. <br><br>
+                    The Line Break tag will create a <b class="tag">&lt;br&gt;</b><br>line break in the text where it's placed. <br><br>
+                    <b class="tag">&lt;pre&gt;</b> will cause the browser to display content exactly as it is written in the code. <br> E.g. If your paragraph <b class="tag">&lt;p&gt;</b> code has text in it that looks like... 
+                    
+                    <div class="this"><pre class="bigthis">                      
+<div>     t
+         h  <!-- Looks ugly, but <pre> displays it exactly how I want on the page, so it stays -->
+             i
+                 s</div>                
+                    </pre></div>
+                    
+                    Then it will be displayed as such, IF it also has the <b class="tag">&lt;pre&gt;</b> tag. Otherwise, it will simply be displayed like... <div id="htmlroles" class="this"><code class="bigthis" id="lilthis">t h i s</code></div>
+                </p>
+            </div>
+        </div> <hr>
+    </div>
+
+    <div class="container">
+  
+        <h1 class="header">HTML Roles</h1><hr> <!-- HTML Roles Section -->
+
+        <div class="maintext">
+
+            <h2>HTML Debugging</h2>
+
+                <p>
+                    Debugging is the process of finding and fixing errors in a given code. It's named this way due to early versions of computers often being infested with literal bugs, then needing to be "debugged". Later, when the coding errors became greater than the physical ones, the term slowly had its meaning changed from insect bashing to error fixing.
+                </p>
+
+            <h2>HTML Attributes</h2>
+
+                <p>
+                    An HTML Attribute refers to the additional information in the start tag of a specific HTML element. For example, you can't use the <b class="tag">&lt;a&gt;</b> tag to link to stuff without the <b class="att">href</b> attribute. Likewise, you can't size an image to your liking at least without the <b class="att">width</b> and <b class="att">height</b> attributes.
+                </p>
+
+            <h2>ARIA Roles</h2>
+
+                <p>
+                    Accessible Rich Internet Applications, or ARIA, is a set of attributes/roles that help the machine recognise and provide certain elements in web pages with accessibility features for the disabled, such as the ability to be screen-read. 
+                </p>
+
+        </div> <hr id="linking"> <!-- I often used <hr> tags as a method of styling as well as a place to house an id for a link to jump to -->
+    </div> 
+
+    <div class="container">
+
+        <h1 class="header">Linking and Navigation</h1><hr> <!-- Linking and Navigation Section -->
+
+        <div class="maintext">
+
+            <h2>Links</h2>
+
+                <p>Here is an example of 3 types of links:</p>
+
+                    <ul>
+                        <li>A link to an external site - <a id="SAUL" href="https://www.youtube.com/watch?v=jeM9yRJwKl8">1 hour of 3D Saul Goodman to slowly lose your sanity over (3D)</a></li>
+                        <li>A link to a place on this page - <a id="topper" href="#pagetop">TOP OF PAGE</a></li>
+                        <li>A link to a page in this site (Remember to provide a link back!)</li>
+                    </ul>
+            
+            <h2>HTTP or HTTPS?</h2> 
+                
+                <p>HTTP, or Hypertext Transfer Protol, is an application protocol that enables most of the data communication on the web. HTTPS, or HTTP Secure, does exactly the same, but encrypts and verifies the requests and responses being transferred. HTTPS is thus far more secure than HTTP, and should always be used instead.</p>
+
+            <h2>URL paths</h2>
+
+                <h4>Absolute and Relative URLs</h4>
+                    
+                    <ul>
+                        <li>Absolute URLs are links that include the protocol, the domain, and the location within the website in the folder system, e.g., "<b>https://www.website.com/xyz.html</b>". Relative URLs only include the location within the folder that comes after the domain, e.g.,"<b>/xyz.html</b>". Because of this, relative URLs can only be used to link to different pages/locations on the same site under the same root domain. They are, however, much easier to code with, and save a lot of time over using absolute URLs to link to local files.</li>
+                    </ul>
+
+                <h4>Index.html</h4>
+
+                    <ul>
+                        <li>When accessing a site, the URL that was used typically won't have a specific file to point to. E.g., <b>website.com</b>, as opposed to <b>website.com/gallery.html</b>. As a result the webserver will—by default—try to locate a file named index.html, as this is the most common name used for default pages (home page) on websites. This can be configured by editing the webservers config files.</li>
+                    </ul>
+
+            <h2>Navigation</h2>
+
+                <p>The Navigation Section of a website is the area of the page that houses the links to different pages. These areas are usually found at the top or to the left of the page, and can be referred to using the <b class="tag">&lt;nav&gt;</b> tag. This tag helps the computer recognise the area as a Nav Section, which can then be read by screen-readers, for instance. <br><br> The Flexbox at the top of this page is a Navigation Section. Below are some more examples.</p>
+
+                <div class="image">
+
+                    <img id="listNav" src="media/listNav.png" alt="List Nav Bar">
+                    <i><p class="align">This is an example of a <b>List</b> used as a Navigation Section, taken from <b class="tag"><a href="https://www.youtube.com/">youtube.com</a></b></p></i>
+                    <img id="flexNav" src="media/flexNav.png" alt="Flex Nav Bar">
+                    <i><p id="flexNavtext" class="align">This is an example of a <b>Flexbox</b> used as a Navigation Section, taken from <b class="tag"><a href="https://www.w3schools.com/html/default.asp">w3schools.com</a></b></p></i>
+
+                </div>
+
+        </div><hr id="images">
+    </div>
+
+    <div class="container">
+
+        <h1 class="header">Images and Graphics</h1><hr> <!-- Images and Graphics Section -->
+
+        <div class="maintext">
+
+                <h2>Images</h2>
+
+                    <p>The <b class="tag">&lt;img&gt;</b> tag is used—alongside four attributes—to refer to an image on a webpage. The four attributes are <b class="att">width</b>, <b class="att">height</b>, <b class="att">src</b>, and <b class="att">alt</b>. The <b class="att">width</b> and <b class="att">height</b> attributes are pretty straightforward, requiring you to set a size for the image on your page. The <b class="att">src</b> attribute means "source" and is where you enter the location of the image folder in the webserver. The <b class="att">alt</b> attribute gives text to an image, and is the alternative to it for screen-readers, or if the image doesn't load.</p>
+                
+                <h2>Image Formats</h2>
+
+                    <p>Images can come in many different formats, each with their own pros and cons. It's important to choose the right image format that suits your needs, as some formats can offer great quality images, but at the expense of file size, and vice verse. Below is a list of some of the most common image formats...</p>
+
+                    <ul>
+                        <li>JPG - The most common image format. Known for its 'lossy' compression technique which decreases image quality as the file size drops.</li>
+                        <li>PNG - Another very common image format that is 'lossless' meaning it retains image quality regardless of editing. As a result, PNG file sizes tend to be larger than JPGs.</li>
+                        <li>GIF - Also uses lossless compression. However, since GIF files are only 8-bit, they can only display up to 256 colours (as opposed to JPGs 24-bit files which can display 16,777,216 colour variations). This makes the GIF format the go-to when creating short animated content, as file sizes stay relatively small due to lower quality.</li>
+                        <li>RAW - The first image format that gets processed on your camera when you take a photo, to be stored for reformatting later. This is the highest quality format, as it is literally the photo you took, without any sort of compression. This of course results in very large file sizes, and is only typically used for post-production and editing.</li>
+                        <li>WebP - A new lossy and lossless image format created by Google to replace the JPG, PNG and GIF formats. It offers smaller file sizes and better quality, but has yet to be supported by most major browsers.</li>
+                    </ul>
+
+                <h2>Bitmap vs Vector Graphics</h2>
+
+                    <p>Bitmap graphics work by telling each pixel on the screen what colour they should be, whereas Vector graphics works by telling each component on the screen where to go. This means that Vector images can be resized at no loss of quality, unlike Bitmap, which requires pixels to "stretch out" to meet the image size, resulting in a blurry look. Bitmap images are, however, much better at producing larger variations of colours, like in most photographs. Vector images are only ideal for where the image has little colour variation going on.</p>
+
+                <h2>The srcset Attribute</h2>
+
+                    <p>The <b class="att">srcset</b> attribute defines a list of image file URLs, along with specific sizes for each image. When the browser gets resized, the image will change depending on, say, the <b class="att">mid-width</b> attribute. There also needs to be a default image identified with the standard <b class="att">src</b> attribute for browsers that don't support <b class="att">srcset</b>.</p>
+
+                <h2>Responsive Images</h2>
+
+                    <p>Responsive images is simply a set of techniques used to keep your imaged sized correctly with the browser. This makes for a more pleasant viewing experience, but can be annoying to implement into your page properly. <br> There is also the ability to change images based on the size of the window. You can use the <b class="att">media</b> attribute along with <b class="att">srcset</b> to define a minimum window size for one or more images to be displayed on the page.</p>
+
+                <h2>Figure and Figcaption</h2>
+
+                    <p>You can use the <b class="tag">&lt;figure&gt;</b> tag to markup an image on your page, and use the <b class="tag">&lt;figcaption&gt;</b> tag to define a caption for the image.</p>
+
+        </div><hr id="media">
+    </div>
+
+    <div class="container">
+        
+        <h1 class="header">Media</h1><hr> <!-- Media Section -->
+
+        <div class="maintext">
+
+            <p>Below are some Media examples (Audio and Video player).</p>
+
+            <audio controls>
+                <source src="media/chicanery.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <video width="320" height="240" controls>
+                <source src="media/GOODMAN.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+        </div><hr id="together">
+    </div>
+
+    <div class="container">
+        
+        <h1 class="header">Putting It All Together</h1><hr> <!-- Putting It All Together Section -->
+
+        <div class="maintext">
+
+            <h2>HTML Page</h2>
+
+                <p>Every HTML Page is barebones structured the same. They consist of four key elements in order to function, being:</p>
+
+                <ul>
+                    <li><b class="tag">!DOCTYPE</b> - Not a tag, but instead a declaration of what type of document the browser should expect, the given being the latest document type.</li>
+                    <li><b class="tag">&lt;html&gt;</b> - The first and last element on the page, representing the root tag for all other content in the HTML page (except <b class="tag">!DOCTYPE</b>.</li>
+                    <li><b class="tag">&lt;head&gt;</b> - A container for metadata, which is found between the <b class="tag">&lt;html&gt;</b> and <b class="tag">&lt;body&gt;</b> tag. This data isn't displayed, but insteads contains information about the other data in the page, such as the doc title, styling, character sets, etc.</li>
+                    <li><b class="tag">&lt;body&gt;</b> - All data in here will be displayed on the website.</li>
+                </ul>
+
+            <h2>Document Head</h2>
+
+                <p>The Document Head contains all metadata relating to the HTML page, consisting of elements such as:</p>
+
+                <ul>
+                    <li><b class="tag">&lt;meta&gt;</b> - This defines metadata about the HTML document, such as the character set, viewport settings, keywords, and the author of the document.</li>
+                    <li><b class="tag">&lt;title&gt;</b> - Your webpage title, which will be displayed in the tab indicator in the browser and is indexed by search engines.</li>
+                    <li><b class="tag">&lt;link&gt;</b> - Tells the browser where external pages are located to link to, such as CSS Stylesheets.</li>
+                </ul>
+
+            <h2>Structuring Content</h2>
+
+                <p>Structuring a webpage can be a smooth and easy process when using what's called <i>semantic elements</i>. These elements clearly describe their meaning and the content they should hold. For example, a <b class="tag">&lt;div&gt;</b> tag isn't semantic, as it could hold any kind of content. A <b class="tag">&lt;nav&gt;</b> tag, or perhaps a <b class="tag">&lt;footer&gt;</b> tag—both which give their meaning in their own names—are semantic, as the <b id="forms" class="tag">&lt;nav&gt;</b> tag is purposed for navigational content, and the <b class="tag">&lt;footer&gt;</b> tag is purposed for content that goes in the footer.</p>  
+
+        </div><hr>
+    </div>
+
+    <div class="container">
+        
+        <h1 class="header">Forms</h1><hr> <!-- Forms Section -->
+
+        <div class="maintext">
+
+            <p><b class="tag">&lt;form&gt;</b> is used to display input fields for the user to enter data. Below are 3 fields which don't do anything on their own... however, adding a Javascript will provide a way to utilise that data.</p>
+
+            <form>
+                <label>First name:</label>
+                <input type="text"><br><br>
+                <label>Middle name:</label>
+                <input type="text"><br><br>
+                <label>Last name:</label>
+                <input type="text"><br><br id="tables">
+                <input id="submit" type="submit" value="Submit">
+            </form>
+
+        </div><hr>
+    </div>
+
+    <div class="container">
+        
+        <h1 class="header">Tables</h1><hr> <!-- Tables Section -->
+
+        <div class="maintext">
+
+            <p><b class="tag">&lt;table&gt;</b> is used to display tables on the webpage. This will lay out data in headings <b class="tag">&lt;th&gt;</b>, rows <b class="tag">&lt;tr&gt;</b> and cells <b class="tag">&lt;td&gt;</b>.</p>
+
+            <table>
+                <tr>
+                  <th>JPG</th>
+                  <th>GIF</th>
+                  <th>PNG</th>
+                  <th>RAW</th>
+                </tr>
+                <tr>
+                  <td>Most commonly used file type</td>
+                  <td>Most commonly used animated format</td>
+                  <td>Another very common lossless image format</td>
+                  <td>Highest quality image format. Large file size.</td>
+                </tr>
+            </table> 
+
+        </div><hr id="history">
+    </div>
+
+    <div class="container">
+
+        <h1 class="header">The Web</h1><hr> <!-- The Web Section -->
+        
+        <div class="maintext">
+
+            <h2>When was the web invented, and by who?</h2>
+
+                <p>The World Wide Web (WWW) was first created in 1989 by British scientist Tim Berners-Lee, for the purpose of automated information-sharing between scientists and institutes.</p>
+
+            <h3>What are the three main language of the web?</h3>
+
+                <p>HTML, CSS and Javascript are the three tools any web developer needs in order to do their work. <br>HTML so you can tell the browser where to put what, CSS so you can tell the browser how it looks, and Javascript so the browser actually understands what you're saying.</p>
+
+            <h3>How does a local HTML page become public?</h3>
+
+                <p>By using what's called a CMS, or Content Management System. Wordpress is one example of an open-source CMS, which hosts roughly a quarter of all websites on the entire web.</p>
+
+            <h3>What is an IDE?</h3>
+                <p>An IDE (Integrated Development Environment) is a software that allows someone to write and test software, as well as facilitating both processes through means such as autofilling elements, syntax highlighting and automatic structuring. Below are some links to different free IDEs, as well as some free coding websites.</p>
+
+                <ul>
+                    <li><a href="https://www.jetbrains.com/idea/download/#section=windows">IntelliJ IDEA</a></li>
+                    <li><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio (Community Edition)</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.topcoder.com/">Topcoder</a></li>
+                </ul>
+
+            <h3>Extra Resources</h3>
+                <p>Here are some HTML and CSS resources to help with your programming:</p>
+
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp">W3 Schools</a></li>
+                    <li><a href="https://www.w3.org/">W3.org</a></li>
+                    <li><a href="https://docs.microsoft.com/en-nz/">Microsoft Docs</a></li>
+                    <li><a href="https://www.linkedin.com/learning/topics/programming-languages">LinkedIn Learning</a></li>
+                </ul>
+        </div><hr>
+    </div>
+
+</body>
+</html>
